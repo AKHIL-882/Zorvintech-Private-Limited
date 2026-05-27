@@ -7,10 +7,10 @@ export function AboutSection() {
   return (
     <section className="section split" id="about">
       <div>
-        <p className="eyebrow">About Zorvintech</p>
-        <h2>Enterprise-grade delivery with startup speed.</h2>
+        <p className="eyebrow">What We Do</p>
+        <h2>We build accessible, modern, and user-friendly digital solutions.</h2>
         <p>
-          Zorvintech Private Limited is a Visakhapatnam-based technology and business solutions company helping organizations modernize software, automate operations, build offshore capability, and scale digital execution.
+          At ZorvinTech, we provide technology, accessibility, and IT solutions for businesses and organizations. Our work spans software, mobile apps, websites, IT support, accessibility remediation, compliance support, and quality testing.
         </p>
         <div className="values">
           {values.map((value) => (
@@ -35,27 +35,6 @@ export function AboutSection() {
   )
 }
 
-export function VisionMissionSection() {
-  return (
-    <section className="section vision-mission">
-      <article>
-        <p className="eyebrow">Vision</p>
-        <h2>To become a trusted global technology and business solutions provider.</h2>
-        <p>
-          We deliver innovative, reliable, and customer-centric services that help businesses move with confidence.
-        </p>
-      </article>
-      <article>
-        <p className="eyebrow">Mission</p>
-        <h2>To empower businesses through technology, innovation, and operational excellence.</h2>
-        <p>
-          We build long-term relationships with clients worldwide while supporting measurable growth and dependable execution.
-        </p>
-      </article>
-    </section>
-  )
-}
-
 export function ServicesSection() {
   const [selectedService, setSelectedService] = useState(null)
 
@@ -76,8 +55,8 @@ export function ServicesSection() {
     <section className="section" id="services">
       <div className="section-heading">
         <p className="eyebrow">Services</p>
-        <h2>Full-spectrum technology and business solutions.</h2>
-        <p>Plan, build, operate, support, and scale with one accountable partner.</p>
+        <h2>Technology, accessibility, and IT services.</h2>
+        <p>We build accessible, modern, and user-friendly digital solutions.</p>
       </div>
       <div className="service-grid">
         {services.map((service) => (
@@ -130,8 +109,8 @@ export function IndustriesSection() {
   return (
     <section className="section band" id="industries">
       <div className="section-heading">
-        <p className="eyebrow">Industries</p>
-        <h2>Built for teams that need dependable execution.</h2>
+        <p className="eyebrow">Who We Help</p>
+        <h2>Reliable and scalable solutions tailored to client needs.</h2>
       </div>
       <div className="industry-grid">
         {industries.map((industry) => (
@@ -149,17 +128,17 @@ export function WhyChooseSection() {
   return (
     <section className="section split">
       <div>
-        <p className="eyebrow">Why Choose Us</p>
-        <h2>Practical delivery, measurable progress, durable systems.</h2>
+        <p className="eyebrow">Why Choose ZorvinTech</p>
+        <h2>Compliance-driven services with practical technology delivery.</h2>
         <p>
-          We combine experienced teams, scalable solution design, affordable engagement models, timely delivery, end-to-end support, and a customer-centric operating rhythm.
+          We combine technology and accessibility to deliver reliable digital experiences with affordable pricing, fast project delivery, quality testing, and dependable support.
         </p>
       </div>
       <div className="trust-panel">
         {progressItems.map(([label, value]) => (
           <div className="progress-item" key={label}>
             <span>{label}</span>
-            <div><i style={{ width: value }}></i></div>
+            <div><i style={{ width: value, textColor: 'black' }}></i></div>
           </div>
         ))}
       </div>
@@ -169,10 +148,10 @@ export function WhyChooseSection() {
 
 export function ProcessSection() {
   return (
-    <section className="section process-section">
+    <section className="section process-section" id="contact">
       <div className="section-heading">
-        <p className="eyebrow">Workflow</p>
-        <h2>A clear delivery process from idea to support.</h2>
+        <p className="eyebrow">Contact Us</p>
+        <h2>Start with a consultation or partnership conversation.</h2>
       </div>
       <div className="process-grid">
         {processSteps.map(([step, description], index) => (
@@ -182,6 +161,12 @@ export function ProcessSection() {
             <p>{description}</p>
           </article>
         ))}
+      </div>
+      <div className="contact-actions">
+        <a className="button primary" href="mailto:info@zorvintech.in">
+          Free Consultation <Icon name="arrow" />
+        </a>
+        <a className="button secondary" href="#services">View Services</a>
       </div>
     </section>
   )

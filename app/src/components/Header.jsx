@@ -9,9 +9,10 @@ export function Header() {
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#industries">Industries</a>
+        <a href="#industries">Who We Help</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a className="header-cta" href="tel:+919666910109">Call Us</a>
+      <a className="header-cta" href="mailto:info@zorvintech.in">Free Consultation</a>
     </header>
   )
 }

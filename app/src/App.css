@@ -78,15 +78,15 @@ nav a:hover,
   background:
     radial-gradient(
       circle at 72% 22%,
-      rgba(34, 211, 238, 0.24),
+      rgba(255, 255, 255, 0.1),
       transparent 30%
     ),
     radial-gradient(
       circle at 18% 78%,
-      rgba(124, 58, 237, 0.18),
+      rgba(255, 255, 255, 0.08),
       transparent 28%
     ),
-    linear-gradient(135deg, #07111f 0%, #0f172a 48%, #102a48 100%);
+    #050505;
   overflow: hidden;
 }
 
@@ -138,6 +138,13 @@ h3 {
   max-width: 650px;
   color: rgba(255, 255, 255, 0.78);
   font-size: clamp(1rem, 1.65vw, 1.18rem);
+}
+
+.hero-trust {
+  max-width: 620px;
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 650;
 }
 
 .hero-logo-mark {
@@ -286,6 +293,47 @@ h3 {
   padding: clamp(58px, 8vw, 110px) clamp(20px, 5vw, 72px);
 }
 
+main > .section:nth-of-type(odd) {
+  color: white;
+  background: #050505;
+}
+
+main > .section:nth-of-type(odd) h2,
+main > .section:nth-of-type(odd) h3,
+main > .section:nth-of-type(odd) .values span,
+main > .section:nth-of-type(odd) .progress-item {
+  color: white;
+}
+
+main > .section:nth-of-type(odd) p {
+  color: white;
+}
+
+main > .section:nth-of-type(even) {
+  color: #050505;
+  background: white;
+}
+
+main > .section:nth-of-type(even) h2,
+main > .section:nth-of-type(even) h3,
+main > .section:nth-of-type(even) p,
+main > .section:nth-of-type(even) .values span,
+main > .section:nth-of-type(even) .progress-item {
+  color: #050505;
+}
+
+main > .section:nth-of-type(odd) .button.secondary {
+  color: white;
+  background: #050505;
+  border-color: white;
+}
+
+main > .section:nth-of-type(even) .button.secondary {
+  color: #050505;
+  background: white;
+  border-color: #050505;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
@@ -347,7 +395,6 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
-  background: linear-gradient(180deg, #f8fafc, #eef6ff);
 }
 
 .vision-mission article {
@@ -549,6 +596,18 @@ h3 {
   transform: translateY(0);
 }
 
+#services .section-heading h2,
+#services .service-card h3,
+#services .service-card li,
+#services .service-hover-label {
+  color: #050505;
+}
+
+#services .section-heading h2,
+#services .section-heading p {
+  color: white;
+}
+
 .service-modal {
   position: fixed;
   inset: 0;
@@ -567,6 +626,29 @@ h3 {
   padding: clamp(30px, 5vw, 64px);
   background: white;
   box-shadow: -28px 0 70px rgba(15, 23, 42, 0.28);
+}
+
+.service-drawer h2,
+.service-drawer h3,
+.service-drawer .eyebrow,
+.service-drawer p,
+.service-drawer li,
+.service-drawer span {
+  color: #050505;
+}
+
+.service-drawer .service-detail-list span {
+  color: #050505;
+}
+
+#services .service-drawer h2,
+#services .service-drawer h3,
+#services .service-drawer .eyebrow,
+#services .service-drawer p,
+#services .service-drawer li,
+#services .service-drawer span,
+#services .service-drawer .service-detail-list span {
+  color: #050505;
 }
 
 .service-drawer > .icon {
@@ -625,10 +707,6 @@ h3 {
   color: var(--cyan);
 }
 
-.band {
-  background: linear-gradient(180deg, #f8fafc, #eef6ff);
-}
-
 .industry-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -659,6 +737,11 @@ h3 {
   gap: 22px;
   padding: 30px;
   border-color: rgba(37, 99, 235, 0.18);
+}
+
+.trust-panel .progress-item,
+.trust-panel .progress-item span {
+  color: #050505;
 }
 
 .progress-item {
@@ -710,12 +793,14 @@ h3 {
   background: white;
 }
 
-.process-section {
-  background: #0f172a;
+.process-section h2,
+.process-section .section-heading p {
+  color: white;
 }
 
-.process-section h2 {
-  color: white;
+.process-section .section-heading a {
+  color: #67e8f9;
+  font-weight: 800;
 }
 
 .process-card h3 {
@@ -764,6 +849,49 @@ h3 {
 
 .process-card p {
   color: var(--muted);
+}
+
+main > .section:nth-of-type(odd) .stat-card h3,
+main > .section:nth-of-type(odd) .service-card h3,
+main > .section:nth-of-type(odd) .industry-card h3,
+main > .section:nth-of-type(odd) .process-card h3,
+main > .section:nth-of-type(odd).vision-mission article h2 {
+  color: #050505;
+}
+
+main > .section:nth-of-type(odd) .stat-card p,
+main > .section:nth-of-type(odd) .service-card p,
+main > .section:nth-of-type(odd) .industry-card p,
+main > .section:nth-of-type(odd) .process-card p,
+main > .section:nth-of-type(odd).vision-mission article p {
+  color: #050505;
+}
+
+main > .section:nth-of-type(odd) .stat-card span,
+main > .section:nth-of-type(odd) .service-card li,
+main > .section:nth-of-type(odd) .process-card p {
+  color: #050505;
+}
+
+main > .section:nth-of-type(odd) .industry-card span {
+  color: #050505;
+}
+
+main > .section:nth-of-type(odd) .process-card span {
+  color: #67e8f9;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.process-section .button.secondary {
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 .testimonial-grid {
@@ -983,7 +1111,8 @@ textarea {
     flex-direction: column;
   }
 
-  .button {
+  .button,
+  .contact-actions .button {
     width: 100%;
   }
 
@@ -1002,4 +1131,8 @@ textarea {
   .workflow-card i {
     display: none;
   }
+}
+
+.service-drawer-title {
+  color: "black";
 }

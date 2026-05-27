@@ -7,20 +7,21 @@ export function Footer() {
         <a className="brand footer-brand" href="#home">
           <BrandLogo />
         </a>
-        <p>IT services, software development, BPO, ITES, and offshore staffing solutions from Visakhapatnam, India.</p>
+        <p>Technology, accessibility, and IT solutions for businesses and organizations.</p>
       </div>
       <div>
         <h3>Quick Links</h3>
-        <a href="#about">About Us</a>
+        <a href="#about">What We Do</a>
         <a href="#services">Services</a>
-        <a href="#industries">Industries</a>
+        <a href="#industries">Who We Help</a>
+        <a href="#contact">Contact</a>
       </div>
       <div>
         <h3>Services</h3>
-        <a href="#services">Software Development</a>
-        <a href="#services">Digital Transformation</a>
-        <a href="#services">Offshore Staffing</a>
-        <a href="#services">Business Support</a>
+        <a href="#services">App Development</a>
+        <a href="#services">Website Development</a>
+        <a href="#services">IT Solutions</a>
+        <a href="#services">Accessibility Services</a>
       </div>
       <div className="footer-contact">
         <h3>Contact Us</h3>
@@ -29,9 +30,9 @@ export function Footer() {
         <strong>Phone</strong>
         <a href="tel:+919666910109">+91 9666910109</a>
         <strong>Email</strong>
-        <a href="mailto:zorvintech@gmail.com">zorvintech@gmail.com</a>
-        <strong>Business Hours</strong>
-        <p>Monday - Saturday<br />9:00 AM - 6:00 PM</p>
+        <a href="mailto:info@zorvintech.in">info@zorvintech.in</a>
+        <strong>Website</strong>
+        <a href="https://www.zorvintech.in">www.zorvintech.in</a>
       </div>
       <p className="copyright">Copyright 2026 Zorvintech Private Limited.</p>
     </footer>

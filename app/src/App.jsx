@@ -7,7 +7,6 @@ import {
   IndustriesSection,
   ProcessSection,
   ServicesSection,
-  VisionMissionSection,
   WhyChooseSection,
 } from './components/Sections'
 
@@ -18,7 +17,6 @@ function App() {
       <main>
         <Hero />
         <AboutSection />
-        <VisionMissionSection />
         <ServicesSection />
         <IndustriesSection />
         <WhyChooseSection />
